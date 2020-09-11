@@ -7,13 +7,14 @@ This is the movie review sentiment analyzer on ReactJS. Using Support Vector Mac
 ![Interface](https://raw.githubusercontent.com/jonathanrsmjtk/page_svm_imdb_review/master/Screen%20Shot%202020-09-11%20at%2019.46.35.png)
 ## How to Unzip
 Run this on your terminal after you located on file's directory (or use `cd`):
+
 `gunzip -c aclImdb_v1.tar.gz | tar xopf -`
 
 `cd aclImdb && mkdir movie_data`
 
 `for split in train test; do for sentiment in pos neg; do for file in $split/$sentiment/*; do cat $file >> movie_data/full_${split}.txt; echo >> movie_data/full_${split}.txt; done; done; done;` 
 
-[source: Aaron Kub](https://towardsdatascience.com/sentiment-analysis-with-python-part-1-5ce197074184))
+[source: Aaron Kub](https://towardsdatascience.com/sentiment-analysis-with-python-part-1-5ce197074184)
 
 ## How to Run
 to start this NPM server locally, just do this:
